@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_header {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid hsl(219, 9%, 45%);
+    padding: 17px;
+    position: relative;
+}
+
+.main_header .header {
+    display: flex;
+}
+
+.header .left_header {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.left_header .bar {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.left_header h1 {
+    margin-left: 14%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 6px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.left_header .menu {
+    margin: auto;
+}
+.menu #cancel{
+    display: none;
+    font-size: 25px;
+    color: #C7C5F4;
+    cursor: pointer;
+}
+
+.left_header .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.left_header .menu ul li {
+    margin: 20px
+}
+
+.left_header .menu ul li a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: hsl(219, 9%, 45%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.header .right_header {
+    width: 50%;
+    text-align: right;
+    /* position: relative; */
+    /* z-index: 1;  */
+}
+
+.right_header img {
+    width: 50px;
+    margin: 1% 13% 1% 1%;
+    cursor: pointer;
+}
+
+.right_header .add_cart {
+    width: 28px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+
+.right_header .boy_image:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 30px;
+}
+
+.right_header #hide {
+    width: 25%;
+    height: auto;
+    text-align: left;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 24%;
+    position: absolute;
+    box-shadow: 0px 6px 15px rgb(0 0 0 / 80%);
+    background-color: white;
+}
+
+#hide h2 {
+    border-bottom: 1px solid hsl(219, 9%, 45%);
+    padding: 4px 0px 17px;
+}
+.right_header .card_quantity{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.right_header .card_quantity img{
+    border-radius: 5px;
+    margin-left: -40px;
+}
+
+.right_header .card_quantity h3{
+    color: hsl(219, 9%, 45%);
+ margin-left: -50px;
+}
+
+#hide #btn {
+    width: 100%;
+    padding: 20px 0px;
+    margin: 3px;
+    border: 0px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 5vh;
+}
+
+
+/* hover type button function===>>>> */
+button {
+    position: relative;
+    border: none;
+    transition: 0.8s ease-in-out;
+    z-index: 1;
+}
+
+button {
+    bottom: 0;
+}
+
+
+/* product styling start here=====>>>>>>>>>>>>>>>>>>>>> */
+
+.product {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.product_image {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 4%;
+    display: block;
+}
+.pro_img{
+    display: none;
+}
+
+.product_image img {
+    margin-top: 5%;
+    margin-left: 12%;
+}
+
+.product_image .first_shose {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.diffrent_slides {
+    margin-left: 10%;
+}
+
+.diffrent_slides img {
+    width: 18%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-right: -2%;
+    margin-left: 3%;
+}
+
+/* oppp===>>> */
+.full-details {
+    /* display: none; */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.full-details img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: block;
+}
+
+/* oppp>>>>>>>>>> */
+
+.product_detail {
+    width: 50%;
+    height: auto;
+    float: right;
+    padding: 4% 3% 3% 0%;
+}
+
+.product_detail h4 {
+    margin-top: 20%;
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    color: hsl(26, 100%, 55%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+.product_detail h2 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 2% 26% 1% 0%;
+    margin-left: 10%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.product_detail p {
+    padding: 3% 19% 3% 0%;
+    margin-left: 10%;
+    line-height: 30px;
+    color: hsl(219, 9%, 45%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.price h3 {
+    font-size: 25px;
+    margin-left: 9%;
+    display: inline-block;
+    margin-top: 1%;
+    padding: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.price .first_span {
+    margin: 0px;
+    font-size: 16px;
+    text-align: center;
+    border: 0px solid red;
+    border-radius: 5px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    background-color: hsl(25, 100%, 94%);
+    ;
+}
+
+.price h5 {
+    margin-left: 10%;
+    padding: 3px 0px 5px 0px;
+    font-size: 18px;
+    color: hsl(219, 9%, 45%);
+}
+
+.cart {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.cart .add {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.cart .add #value {
+    padding: 21px 0px;
+    width: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0px solid white;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.cart .add button {
+    width: 65px;
+    padding: 25px 0px;
+    margin: 3px;
+    border: 0px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    color: orange;
+    cursor: pointer;
+}
+
+.cart #btn {
+    width: 45%;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: hsl(26, 100%, 55%);
+    cursor: pointer;
+    margin-left: 15px;
+    color: hsl(0, 0%, 100%);
+}
+.cart #btn:hover{
+    background-color: hsl(26, 73%, 71%);
+}
+
+.cart .add_img {
+    margin: -4px;
+    margin-right: 4px;
+    width: 18px;
+    color: #C7C5F4;
+}
